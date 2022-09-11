@@ -23,20 +23,45 @@
 
         <h1>Первое задание</h1>
 
+        <h2 id = "head1">Нумерованный список гиперссылок</h2>
+
         <ol>
-            <li><a href = "http://example.com">Первая</a></li>
-            <li><a href = "https://example.com">Вторая</a></li>
-
-
-            <li><a href = "https://wikikou.ru/wiki/Differential_form#Integration_over_chains">Пятая</a></li>
-            <li><a href = "">Шестая</a></li>
-
-
-
-            <li><a href = "">Десятая</a></li>
+            <li><a href = "http://example.com">Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+            <li><a href = "https://example.com">Абсолютная гиперссылка на главную страницу сайта example.com в протоколе https</a></li>
+            <li><a href = "ftp:/2ch.hk/files.file.html">Ссылка на файл на сервере FTP без авторизации</a></li>
+            <li><a href = "ftp://user:228@2ch.hk/files.file.html">Ссылку на файл на сервере FTP с авторизацией</a></li>
+            <li><a href = "https://wikikou.ru/wiki/Differential_form#Integration_over_chains">Ссылка на фрагмент страницы некоторого сайта</a></li>
+            <li><a href = "#form">Ссылка на фрагмент текущей страницы</a></li>
+            <li><a href = "http://example.com?parameter1=p1&parameter2=p2">Ссылка с двумя параметрами в URL</a></li>
+            <li>Список ссылок основной навигации сайта с подписями title
+                <ul>
+                    <li><a href = "#head1" title = "Нумерованный список гиперссылок">Нумерованный список гиперссылок</a></li>
+                    <li><a href = "#head2" title = "Форма">Форма</a></li>
+                </ul>
+            </li>
+            <li><a>Ссылка без href</a></li>
+            <li><a href = "">Ссылка с пустым href</a></li>
+            <li><a href = "http://example.com" rel = "nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+            <li><a href = "http://example.com" rel = "nofollow"><!--noindex-->Ссылка, запрещенная для индексации поисковиками<!--/noindex--></a></li>
+            <li><p>Контекстная <a href = "http://example.com">ссылка</a> в тексте абзаца</p></li>
+            <li>Ссылка-изображение<br /><a href = "https://siblec.ru/telekommunikatsii/elektromagnitnye-polya-i-volny/3-uravneniya-maksvella-differentsialnye-uravneniya-elektromagnitnogo-polya"><img src = "https://cf.ppt-online.org/files/slide/o/O04XyLYqnr1ShcpBlxmHTe8fNs2bktAvZM7CJa/slide-6.jpg" width = "190" height = "140" alt = "Описание"></a></li>
+            <li>Ссылки из прямоугольных и круглых областей картинки<br /><img src = "https://avvesione.files.wordpress.com/2012/12/psycho_pass-09-akane-coffee-curious-looking_up.jpg" width = "256" height = "144" alt = "Описание" usemap = "#mymap">
+                <map name = "mymap">
+                    <area shape = "rect" coords = "0, 0, 76, 144" href = "https://animego.org/" alt = "Прямоугольная область">
+                    <area shape = "circle" coords = "152, 76, 76" href = "https://jut.su/psycho-pass/" alt = "Круглая область">
+                </map>
+            </li>
+            <li><a href = "page">Относительная ссылка на страницу в текущем каталоге</a></li>
+            <li><a href = "./about/page">Относительная ссылка на страницу в каталоге about</a></li>
+            <li><a href = "../page">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href = "../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+            <li><a href = "/">Сокращенная ссылка на главную</a></li>
+            <li><a href = "/pages/page">Сокращенная ссылка на внутреннюю</a></li>
         </ol>
 
-        <form action = "/" method = "post">
+        <h2 id = "head2">Форма</h2>
+
+        <form action = "/" method = "post" id = "form">
 
             <label>
                 Имя: 
