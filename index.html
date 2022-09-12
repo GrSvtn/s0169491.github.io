@@ -28,15 +28,15 @@
         <ol>
             <li><a href = "http://example.com">Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
             <li><a href = "https://example.com">Абсолютная гиперссылка на главную страницу сайта example.com в протоколе https</a></li>
-            <li><a href = "ftp://2ch.hk/files.file.html">Ссылка на файл на сервере FTP без авторизации</a></li>
-            <li><a href = "ftp://user:228@2ch.hk/files.file.html">Ссылку на файл на сервере FTP с авторизацией</a></li>
+            <li><a href = "ftp://ftp.example.com/files/file.html">Ссылка на файл на сервере FTP без авторизации</a></li>
+            <li><a href = "ftp://user:pass@ftp.example.com/files/file.html">Ссылку на файл на сервере FTP с авторизацией</a></li>
             <li><a href = "https://wikikou.ru/wiki/Differential_form#Integration_over_chains">Ссылка на фрагмент страницы некоторого сайта</a></li>
             <li><a href = "#form">Ссылка на фрагмент текущей страницы</a></li>
             <li><a href = "http://example.com?parameter1=p1&parameter2=p2">Ссылка с двумя параметрами в URL</a></li>
             <li>Список ссылок основной навигации сайта с подписями title
                 <ul>
-                    <li><a href = "#head1" title = "Нумерованный список гиперссылок">Нумерованный список гиперссылок</a></li>
-                    <li><a href = "#head2" title = "Форма">Форма</a></li>
+                    <li><a href = "#head1" title = "first">Нумерованный список гиперссылок</a></li>
+                    <li><a href = "#head2" title = "second">Форма</a></li>
                 </ul>
             </li>
             <li><a>Ссылка без href</a></li>
@@ -65,7 +65,7 @@
 
             <label>
                 Имя: 
-                <input name = "field-name" value = "" />
+                <input name = "field-name" placeholder="Введите своё имя" />
             </label> <br />
 
             <label>
@@ -79,8 +79,8 @@
             </label><br />
 
             Пол:
-            <label><input type = "radio" checked = "checked" name = "radio-group-1" value = "value-1" />Мужской</label>
-            <label><input type = "radio" name = "radio-group-1" value = "value-2" />Женский</label><br />
+            <label><input type = "radio" name = "radio-group-1" value = "value-1" />Мужской</label>
+            <label><input type = "radio" checked = "checked" name = "radio-group-1" value = "value-2" />Женский</label><br />
 
             Количество конечностей:
             <label><input type = "radio" name = "radio-group-2" value = "value-0">0</label>
@@ -102,7 +102,7 @@
 
             <label>
                 Биография:
-                <textarea name = "field-biography"></textarea>
+                <textarea name = "field-biography" placeholder="Расскажите о себе"></textarea>
             </label><br />
 
             <label><input type = "checkbox" name = "check-1" />С контрактом ознакомлен (-а)</label><br />
